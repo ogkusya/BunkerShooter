@@ -5,8 +5,9 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour, IDamageable
 {
     [SerializeField] protected int maxHealth;
-
     protected int currentHealth;
+
+    public int MaxHealth => maxHealth;
     public int CurrentHealth => currentHealth;
 
     private void Awake()
